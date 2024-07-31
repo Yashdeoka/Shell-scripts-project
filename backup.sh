@@ -20,7 +20,7 @@ function create_backup {
 zip -r "${backup_dir}.zip"  "${source_dir}" > /dev/null
 
 if [ $? -eq 0 ]; then
-        echo "Backup creted successfully"
+        echo "Backup created successfully"
 else
         echo "backup was not performed for $timestamp"
 fi
